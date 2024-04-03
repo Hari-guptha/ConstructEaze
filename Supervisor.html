@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------------Fav-------------------- -->
+    <link rel="shortcut icon" href="./assets/Image/logo.png" type="image/x-icon">
+    <!-- -----------------------css--------------------------------- -->
+    <link rel="stylesheet" href="./assets/Css/Main.css">
+    <title>ConstructEaze</title>
+</head>
+
+<body id="nonscroll">
+    <div id="NavBar">
+        <div id="Logo-Container">
+            <img id="Logo" src="./assets/Image/logo.png" alt="Logo">
+            <h4>ConstructEaze</h4>
+        </div>
+        <div id="NavItems">
+            <h3 id="NavItem">MASTER</h3>
+            <h3 id="NavItem">LABOUR MANAGEMENT</h3>
+            <h3 id="NavItem">PURCHASE MANAGEMENT</h3>
+            <h3 id="NavItem">SITE ACTIVITY</h3>
+            <h3 id="NavItem">REPORT GENERATION</h3>
+        </div>
+        <a id="logbtn" href="">Logout</a>
+    </div>
+    <div id="backgroundBlur"> </div>
+    <div style="display: flex;justify-content: center;">
+        <div id="PopUp">
+            <div style="display: flex;justify-content: end;">
+                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h4 id="popuptitle">Supervisor DETAILS</h4>
+            <form action="" style="display: flex;flex-direction: column;">
+                <input id="popinput" placeholder="Enter the Name" type="text">
+                <input id="popinput" placeholder="Enter the Email Id" type="text">
+                <input id="popinput" placeholder="Enter the Password" type="text">
+                <div style="display: flex;justify-content: center;">
+                    <a id="popupbtn">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="display: flex;position: relative;">
+        <div id="SideBarMain">
+            <h3 id="SideBarItem">Client Form</h3>
+            <h3 id="SideBarItem">Product Form</h3>
+            <h3 id="SideBarItem">Labour Form</h3>
+                <h3 id="SideBarItem">Vendor Form</h3>
+            <h3 id="SideBarItem" style="background-color: #ffc048;">Supervisor</h3>
+        </div>
+
+        <div id="TableMain">
+            <div id="InnerTable">
+                <table id="customers">
+                    <tr id="header">
+                        <th>Serial No</th>
+                        <th>Name</th>
+                        <th>Email Id</th>
+                        <th>Password</th>
+                        <th>
+                            <div style="display: flex;justify-content: center;">
+                                <h4 onclick="tiggerpopup()" id="tablebtn" href=""> + Add</h4>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+
+                        <td>Alfreds Futterkiste</td>
+                        <td id="TableMenuMain">
+                            <div id="TableMenu">
+                                <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/Js/Script.js"></script>
+</body>
+
+</html>
