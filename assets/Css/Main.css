@@ -413,9 +413,9 @@ body::-webkit-scrollbar-thumb {
     z-index: 1000;
     display: none;
     background-color: #ffffff;
-    height: 500px;
+    height: fit-content;
     width: 800px;
-    margin: 5%;
+    margin: 2%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -507,7 +507,35 @@ a {
     background-color: red;
 }
 
+#chvendorbtn{
+    background-color: #4a40a7;
+    color: white;
+    font-weight: 400;
+    margin: 30px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-content: center;
+}
 
+#OrderId{
+    font-weight: 400;
+    background-color: #4a40a7;
+    align-content: center;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+}
+
+#OrderDate{
+    text-align: center;
+    font-weight: 400;
+    width: fit-content;
+    background-color: #4a40a7;
+    align-content: center;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+}
 
 /* -------------------responsive------------------- */
 
