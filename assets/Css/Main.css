@@ -389,6 +389,7 @@ body::-webkit-scrollbar-thumb {
 
 #TableMenu {
     display: flex;
+    gap: 10px;
 }
 
 #TableMenuMain {
@@ -489,6 +490,24 @@ a {
     width: 300px;
     padding: 5px 10px;
 }
+
+#Present {
+    font-weight: 400;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #4CAF50;
+}
+
+#Absent {
+    font-weight: 400;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: red;
+}
+
+
 
 /* -------------------responsive------------------- */
 
