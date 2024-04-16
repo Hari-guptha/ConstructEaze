@@ -134,6 +134,7 @@ body::-webkit-scrollbar-thumb {
 #logbtn {
     background-color: #ffc048;
     color: black;
+    align-content: center;
     text-decoration: none;
     padding: 10px 30px;
     margin: 1% 0;
@@ -148,9 +149,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #NavItem {
+    text-transform: capitalize ;
     color: white;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #NavItem:hover {
@@ -237,6 +239,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     background-color: rgb(74, 64, 167);
     color: white;
+    font-size: 13.28px;
     padding: 5px 30px;
     align-items: center;
     border-radius: 5px;
@@ -265,6 +268,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #ProjectCard {
+    cursor: pointer;
     width: fit-content;
     display: flex;
     border-color: #4a40a7;
@@ -314,7 +318,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #SideBarItem {
-    font-size: 16px;
+    cursor: pointer;
+    font-size: 14px;
     font-weight: 500;
     padding: 10px 30px;
 }
@@ -339,6 +344,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #ffc048;
     text-decoration: none;
     padding: 5px 20px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
     border-radius: 5px;
@@ -385,6 +391,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
+    font-size: 15px;
     font-weight: 400;
     background-color: #4a40a7;
     color: white;
@@ -444,6 +451,11 @@ body::-webkit-scrollbar-thumb {
     margin-top: 20px;
 }
 
+#popupbtn:hover{
+    background-color: #ffa600;
+    color: white;
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -495,10 +507,17 @@ a {
 }
 
 
-#tablesearch div {
+#tablesearch h5 {
+    cursor: pointer;
     background-color: #4a40a7;
+    font-weight: 400;
     padding: 10px 20px;
     color: white;
+}
+
+
+#tablesearch h5:hover {
+    background-color: #2009f1;
 }
 
 #tablesearch input {
@@ -523,6 +542,7 @@ a {
 }
 
 #chvendorbtn{
+    cursor: pointer;
     background-color: #4a40a7;
     color: white;
     font-weight: 400;
@@ -530,6 +550,10 @@ a {
     padding: 10px 20px;
     border-radius: 5px;
     align-content: center;
+}
+
+#chvendorbtn:hover{
+    background-color: #2009f1;
 }
 
 #OrderId{
@@ -585,6 +609,10 @@ a {
     border-radius: 5px;
 }
 
+#Download:hover{
+    background-color: #ffa600;
+    color: white;
+}
 #popupinnerbox1{
     display: flex;
     flex-direction: column;
@@ -609,6 +637,10 @@ a {
     margin-bottom: 10px;
     padding: 5px 20px;
     border-radius: 5px;
+}
+
+#popsubmitbtn:hover{
+    background-color: #2009f1;
 }
 
 .super-color th{
