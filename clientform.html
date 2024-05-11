@@ -72,12 +72,12 @@
             <img id="Logo" src="./assets/Image/logo.png" alt="Logo">
             <h4>ConstructEaze</h4>
         </div>
-        <div id="NavItems">
-            <h3 id="NavItem">Master</h3>
-            <h3 id="NavItem">Labour Management</h3>
-            <h3 id="NavItem">Purchase Management</h3>
-            <h3 id="NavItem">Site Activity</h3>
-            <h3 id="NavItem">Report Generation</h3>
+       <div id="NavItems">
+            <a href="#"><h3 id="NavItem">Master</h3></a>
+            <a href="#"><h3 id="NavItem">Labour Management</h3></a>
+            <a href="#"><h3 id="NavItem">Purchase Management</h3></a>
+            <a href="#"><h3 id="NavItem">Site Activity</h3></a>
+            <a href="#"><h3 id="NavItem">Report Generation</h3></a>
         </div>
         <a id="logbtn" href="">Logout</a>
         <div onclick="tiggermenu()" id="phonenav">
@@ -86,7 +86,7 @@
     </div>
     <div id="backgroundBlur"> </div>
     <div style="display: flex;justify-content: center;">
-        <div id="PopUp">
+        <div id="PopUp" style="width: 500px;">
             <div style="display: flex;justify-content: end;">
                 <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
@@ -103,20 +103,38 @@
             </form>
         </div>
     </div>
+    <div style="display: flex;justify-content: center;">
+        <div id="Uploadsync" >
+            <div style="display: flex;justify-content: end;">
+                <img onclick="CloseUpload()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <div id="filename"></div>
+            <div style="display: flex;justify-content: center;">
+                <a onclick="CloseUpload()" id="popupbtn">Sync</a>
+            </div>
+        </div>
+    </div>
     <div style="display: flex;position: relative;">
         <div id="SideBarMain">
-            <h3 id="SideBarItem" style="background-color: #ffc048;">Client Form</h3>
-            <a href="/ProductForm.html">
-                <h3 id="SideBarItem">Product Form</h3>
-            </a>
-            <h3 id="SideBarItem">Labour Form</h3>
-            <h3 id="SideBarItem">Vendor Form</h3>
-            <h3 id="SideBarItem">Supervisor</h3>
+            <a href="#" id="setactivate"><h3 id="SideBarItem">Client Form</h3></a>
+            <a><h3 id="SideBarItem">Product Form</h3></a>
+            <a href="#" ><h3 id="SideBarItem">Labour Form</h3></a>
+            <a href="#" ><h3 id="SideBarItem">Vendor Form</h3></a>
+            <a href="#" ><h3 id="SideBarItem">Supervisor</h3></a>
         </div>
         <div id="searchBox" style="width: 100%;margin-right: 80px">
-            <div>
+            <div id="phonesearch" style="display: flex;justify-content: space-between;width: 105%;margin-left: 0px;">
                 <div id="tablesearch"><input type="text" placeholder="Search..">
                     <h5>Search</h5>
+                </div>
+                <div style="display: flex;gap: 20px;">
+                    <div>
+                        <!-- Input element for file upload -->
+                        <input type="file" id="fileInput" accept=".csv" onchange="handleFileUpload()">
+                        <!-- Upload button -->
+                        <h5 id="chvendorbtn" onclick="openFileUploader()">Upload</h5>
+                    </div>
+                    <h5 onclick="tiggerpopup()" id="chvendorbtn">Add</h5>
                 </div>
             </div>
             <div id="TableMain">

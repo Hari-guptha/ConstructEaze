@@ -46,7 +46,7 @@
                     <h3 id="NavItem">SITE ACTIVITY</h3>
                     <div class="dropdown-content">
                         <a href="#">To Do</a>
-
+                        <a href="#">Check List</a>
                         <a href="#">Material Inward</a>
                         <a href="#">Material Outward</a>
                         <a href="#">Work Done</a>
@@ -72,7 +72,7 @@
             <img id="Logo" src="./assets/Image/logo.png" alt="Logo">
             <h4>ConstructEaze</h4>
         </div>
-        <div id="NavItems">
+       <div id="NavItems">
             <a href="#"><h3 id="NavItem">Master</h3></a>
             <a href="#"><h3 id="NavItem">Labour Management</h3></a>
             <a href="#"><h3 id="NavItem">Purchase Management</h3></a>
@@ -87,117 +87,72 @@
     <div id="backgroundBlur"> </div>
     <div style="display: flex;justify-content: center;">
         <div id="PopUp" style="width: 500px;">
-            <div style="display: flex;justify-content: end;">
+            <div style="display: flex;justify-content: flex-end;">
                 <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
-            <h4 id="popuptitle">Supervisor DETAILS</h4>
+            <h4 id="popuptitle">Material Outward</h4>
             <form action="" style="display: flex;flex-direction: column;">
-                <input id="popinput" placeholder="Enter the Name" type="text">
-                <input id="popinput" placeholder="Enter the Email Id" type="text">
-                <input id="popinput" placeholder="Enter the Password" type="text">
+                <input id="popinput" placeholder="Enter the Product" type="text">
+                <input id="popinput" placeholder="Enter the Total" type="text">
+                <!-- <input id="popinput" placeholder="Enter the Task" type="text"> -->
                 <div style="display: flex;justify-content: center;">
                     <a id="popupbtn">Submit</a>
                 </div>
             </form>
         </div>
     </div>
-    <div style="display: flex;justify-content: center;">
-        <div id="Uploadsync">
-            <div style="display: flex;justify-content: end;">
-                <img onclick="CloseUpload()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
-            </div>
-            <div id="filename"></div>
-            <div style="display: flex;justify-content: center;">
-                <a onclick="CloseUpload()" id="popupbtn">Sync</a>
-            </div>
-        </div>
-    </div>
     <div style="display: flex;position: relative;">
         <div id="SideBarMain">
-            <a href="#">
-                <h3 id="SideBarItem">Client Form</h3>
+            <a>
+                <h3 id="SideBarItem">To Do</h3>
             </a>
-            <a href="#">
-                <h3 id="SideBarItem">Product Form</h3>
-            </a>
-            <a href="#">
-                <h3 id="SideBarItem">Labour Form</h3>
-            </a>
-            <a href="#">
-                <h3 id="SideBarItem">Vendor Form</h3>
+
+            <a>
+                <h3 id="SideBarItem">Material Inward</h3>
             </a>
             <a href="#" id="setactivate">
-                <h3 id="SideBarItem">Supervisor</h3>
+                <h3 id="SideBarItem">Material Outward</h3>
             </a>
+            <a>
+                <h3 id="SideBarItem">Work Done</h3>
+            </a>
+            <a>
+                <h3 id="SideBarItem">Total Expense</h3>
+            </a>
+   
         </div>
-        <div style="width: 100%;margin-right: 80px;">
+        <div id="searchBox" style="width: 100%;margin-right: 80px">
             <div id="phonesearch" style="display: flex;justify-content: space-between;width: 105%;margin-left: 0px;">
                 <div id="tablesearch"><input type="text" placeholder="Search..">
                     <h5>Search</h5>
                 </div>
                 <div style="display: flex;gap: 20px;">
-                    <div>
-                        <!-- Input element for file upload -->
-                        <input type="file" id="fileInput" accept=".csv" onchange="handleFileUpload()">
-                        <!-- Upload button -->
-                        <h5 id="chvendorbtn" onclick="openFileUploader()">Upload</h5>
-                    </div>
+                    <h5 id="chvendorbtn">Download</h5>
                     <h5 onclick="tiggerpopup()" id="chvendorbtn">Add</h5>
                 </div>
             </div>
-            <div id="TableMain">
+            <div id="TableMain" style="margin-bottom: 30px;">
                 <div id="InnerTable">
                     <table id="customers">
                         <tr id="header">
-                            <th style="text-transform: capitalize;">Serial No</th>
-                            <th>Name</th>
-                            <th>Emil Id</th>
-                            <th>Password</th>
-                            <th>
-                                <div style="display: flex;justify-content: center;">
-                                    <h4 onclick="tiggerpopup()" id="tablebtn" href=""> Add</h4>
-                                </div>
-                            </th>
+                            <th>Serial No</th>
+                            <th>Product</th>
+                            <th>Total</th>
+                            <th>Current Stock</th>
+                            <th >Used Stock</th>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>value</td>
                             <td>value</td>
-
                             <td>value</td>
-                            <td id="TableMenuMain">
-                                <div id="TableMenu">
-                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                                </div>
-                            </td>
+                            <td><div class="DIControl">
+                                <button class="btn" onclick="decreaseNumber()">-</button>
+                                <input type="number" id="number" value="0" >
+                                <button class="btn" onclick="increaseNumber()">+</button>
+                              </div></td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-                            <td>value</td>
 
-                            <td>value</td>
-                            <td id="TableMenuMain">
-                                <div id="TableMenu">
-                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td id="TableMenuMain">
-                                <div id="TableMenu">
-                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                                </div>
-                            </td>
-                        </tr>
                     </table>
                 </div>
             </div>

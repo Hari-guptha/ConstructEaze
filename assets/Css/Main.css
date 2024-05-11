@@ -149,7 +149,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #NavItem {
-    text-transform: capitalize ;
+    text-transform: capitalize;
     color: white;
     font-size: 14px;
     font-weight: 400;
@@ -354,6 +354,7 @@ body::-webkit-scrollbar-thumb {
 
 #closebtn {
     width: 30px;
+    cursor: pointer;
 }
 
 #InnerTable {
@@ -396,12 +397,33 @@ body::-webkit-scrollbar-thumb {
     background-color: #4a40a7;
     color: white;
     position: sticky;
+    text-transform: capitalize !important;
     /* Make the header sticky */
     top: 0;
     /* Stick to the top */
     z-index: 1;
     /* Ensure it appears above other elements */
 }
+
+.DIControl {
+    display: flex;
+    align-items: center;
+}
+
+.DIControl button {
+    padding: 5px 20px;
+    margin: 0px 10%;
+}
+
+.DIControl input {
+    width: fit-content;
+    text-align: center;
+}
+
+#fileInput {
+    display: none;
+}
+
 
 #TableMain {
     margin: 0 5%;
@@ -414,6 +436,10 @@ body::-webkit-scrollbar-thumb {
     gap: 10px;
 }
 
+#setactivate {
+    background-color: #ffc048 !important;
+}
+
 #TableMenuMain {
     display: flex;
     justify-content: center;
@@ -421,7 +447,8 @@ body::-webkit-scrollbar-thumb {
 
 #TableMenu img {
     padding: 0px 10px;
-    width: 25px;
+    width: 20px;
+    cursor: pointer;
 }
 
 /* Hide the vertical scrollbar */
@@ -436,12 +463,30 @@ body::-webkit-scrollbar-thumb {
     display: none;
     background-color: #ffffff;
     height: fit-content;
-    width: 800px;
+    width: 70%;
     margin: 2%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+#Uploadsync {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    background-color: #ffffff;
+    height: fit-content;
+    width: 400px;
+    margin: 2%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#filename{
+    text-align: center;
+    margin: 20px 0;
+}
+
 
 #popupbtn {
     background-color: #ffc048;
@@ -449,9 +494,10 @@ body::-webkit-scrollbar-thumb {
     font-weight: 500;
     width: fit-content;
     margin-top: 20px;
+    cursor: pointer;
 }
 
-#popupbtn:hover{
+#popupbtn:hover {
     background-color: #ffa600;
     color: white;
 }
@@ -526,6 +572,7 @@ a {
 }
 
 #Present {
+    font-size: 14px;
     font-weight: 400;
     padding: 5px 10px;
     color: rgb(255, 255, 255);
@@ -534,6 +581,7 @@ a {
 }
 
 #Absent {
+    font-size: 14px;
     font-weight: 400;
     padding: 5px 10px;
     color: rgb(255, 255, 255);
@@ -541,7 +589,7 @@ a {
     background-color: red;
 }
 
-#chvendorbtn{
+#chvendorbtn {
     cursor: pointer;
     background-color: #4a40a7;
     color: white;
@@ -552,11 +600,11 @@ a {
     align-content: center;
 }
 
-#chvendorbtn:hover{
+#chvendorbtn:hover {
     background-color: #2009f1;
 }
 
-#OrderId{
+#OrderId {
     font-weight: 400;
     background-color: #4a40a7;
     align-content: center;
@@ -565,7 +613,7 @@ a {
     border-radius: 50px;
 }
 
-#OrderDate{
+#OrderDate {
     text-align: center;
     align-content: center;
     font-size: 15px;
@@ -574,7 +622,7 @@ a {
     color: rgb(0, 0, 0);
 }
 
-#popupinnerbox{
+#popupinnerbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -600,7 +648,7 @@ a {
     border-color: #4a40a7;
 }
 
-#Download{
+#Download {
     background-color: #ffc048;
     padding: 10px 20px;
     width: fit-content;
@@ -609,11 +657,12 @@ a {
     border-radius: 5px;
 }
 
-#Download:hover{
+#Download:hover {
     background-color: #ffa600;
     color: white;
 }
-#popupinnerbox1{
+
+#popupinnerbox1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -621,7 +670,7 @@ a {
     width: 100%;
 }
 
-#secondinnerbox{
+#secondinnerbox {
     border-color: #28282870;
     border-width: 1px;
     gap: 5px;
@@ -630,7 +679,7 @@ a {
 
 }
 
-#popsubmitbtn{
+#popsubmitbtn {
     background-color: #4a40a7;
     color: white;
     font-weight: 500;
@@ -639,20 +688,22 @@ a {
     border-radius: 5px;
 }
 
-#popsubmitbtn:hover{
+#popsubmitbtn:hover {
     background-color: #2009f1;
 }
 
-.super-color th{
+.super-color th {
     background-color: #4d4d4d !important;
 }
+
 
 /* -------------------responsive------------------- */
 
 @media only screen and (max-width:600px) {
-    body{
+    body {
         overflow: auto !important;
     }
+
     #Logo {
         width: 50px;
         height: 50px;
@@ -739,10 +790,10 @@ a {
     }
 
     #TableMain {
-        max-width: 90% ;
+        max-width: 90%;
     }
 
-    .phonepopuptable{
+    .phonepopuptable {
         max-width: 100% !important;
     }
 
@@ -766,20 +817,25 @@ a {
         padding: 20px 0px;
         color: rgb(0, 0, 0) !important;
     }
-    #phonesearch{
+
+    #phonesearch {
         flex-wrap: wrap;
         width: 100% !important;
     }
-    #tablesearch{
+
+    #tablesearch {
         width: 90% !important;
     }
-    #chvendorbtn{
+
+    #chvendorbtn {
         margin-left: 20px;
     }
-    #phonesecction1{
+
+    #phonesecction1 {
         flex-wrap: wrap;
     }
-    #OrderDate{
+
+    #OrderDate {
         display: none;
     }
 }

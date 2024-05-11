@@ -9,8 +9,10 @@ const tiggerpopup = () => {
 const ClosePopUp = () => {
     const pop = document.getElementById('PopUp');
     const blur = document.getElementById('backgroundBlur');
+    const Body = document.getElementById('mainbody');
     pop.style.display = "none";
     blur.style.display = "none";
+    Body.style.overflow = "auto"
 }
 
 
@@ -22,6 +24,16 @@ const tiggermenu = () => {
 }
 
 
+const tiggerProject = () => {
+    const blur = document.getElementById('backgroundBlur');
+    const pop = document.getElementById('PopUp');
+    const Body = document.getElementById('mainbody');
+    blur.style.display = "block";
+    pop.style.display = "block";
+    Body.style.overflow = "hidden";
+}
+
+
 const Closemenu = () => {
     const pop = document.getElementById('phoneSidebar');
     const blur = document.getElementById('backgroundBlur');
@@ -29,8 +41,53 @@ const Closemenu = () => {
     blur.style.display = "none";
 }
 
+  // Function to increase the number
+  function increaseNumber() {
+    var numberElement = document.getElementById("number");
+    var currentNumber = parseInt(numberElement.value);
+    numberElement.value = currentNumber + 1;
+  }
+
+  // Function to decrease the number
+  function decreaseNumber() {
+    var numberElement = document.getElementById("number");
+    var currentNumber = parseInt(numberElement.value);
+    if (currentNumber > 0) {
+      numberElement.value = currentNumber - 1;
+    }
+  }
 
 
+  const CloseUpload = () => {
+    const pop = document.getElementById('Uploadsync');
+    const blur = document.getElementById('backgroundBlur');
+    pop.style.display = "none";
+    blur.style.display = "none";
+}
+
+   // Function to open file uploader when "Upload" is clicked
+   function openFileUploader() {
+    document.getElementById("fileInput").click();
+    const pop = document.getElementById('Uploadsync');
+    const blur = document.getElementById('backgroundBlur');
+    pop.style.display = "block";
+    blur.style.display = "block";
+  }
+
+  // Function to handle file upload
+  function handleFileUpload() {
+    var fileInput = document.getElementById("fileInput");
+    var selectedFile = fileInput.files[0];
+    // Handle the selected file here, e.g., read its contents, upload it, etc.
+    console.log("Selected file:", selectedFile);
+  }
+
+  function handleFileUpload() {
+    var fileInput = document.getElementById('fileInput');
+    var fileName = fileInput.value.split('\\').pop(); // Extracting file name
+    var filetitle = document.getElementById("filename")
+    filetitle.innerHTML = fileName
+}
 const tokenSet = new Set(); // Set to store generated tokens
 
 // Unique Token Generator Function

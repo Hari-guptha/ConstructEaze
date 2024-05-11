@@ -72,12 +72,12 @@
             <img id="Logo" src="./assets/Image/logo.png" alt="Logo">
             <h4>ConstructEaze</h4>
         </div>
-        <div id="NavItems">
-            <h3 id="NavItem">Master</h3>
-            <h3 id="NavItem">Labour Management</h3>
-            <h3 id="NavItem">Purchase Management</h3>
-            <h3 id="NavItem">Site Activity</h3>
-            <h3 id="NavItem">Report Generation</h3>
+       <div id="NavItems">
+            <a href="#"><h3 id="NavItem">Master</h3></a>
+            <a href="#"><h3 id="NavItem">Labour Management</h3></a>
+            <a href="#"><h3 id="NavItem">Purchase Management</h3></a>
+            <a href="#"><h3 id="NavItem">Site Activity</h3></a>
+            <a href="#"><h3 id="NavItem">Report Generation</h3></a>
         </div>
         <a id="logbtn" href="">Logout</a>
         <div onclick="tiggermenu()" id="phonenav">
@@ -86,7 +86,7 @@
     </div>
     <div id="backgroundBlur"> </div>
     <div style="display: flex;justify-content: center;">
-        <div id="PopUp">
+        <div id="PopUp" style="width: 500px;">
             <div style="display: flex;justify-content: end;">
                 <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
@@ -95,325 +95,359 @@
                 <input id="popinput" placeholder="Enter the Name" type="text">
                 <input id="popinput" placeholder="Enter the First Name" type="text">
                 <input id="popinput" placeholder="Enter the Address" type="text">
-                <input id="popinput"  placeholder="Enter the GSTin" type="text">
-                <input id="popinput"  placeholder="Enter the Phone Number" type="text">
+                <input id="popinput" placeholder="Enter the GSTin" type="text">
+                <input id="popinput" placeholder="Enter the Phone Number" type="text">
                 <div style="display: flex;justify-content: center;">
                     <a id="popupbtn">Submit</a>
                 </div>
             </form>
         </div>
     </div>
-    <div style="display: flex;position: relative;">
-        <div id="SideBarMain">
-            <h3 id="SideBarItem">Client Form</h3>
-            <h3 id="SideBarItem">Product Form</h3>
-            <h3 id="SideBarItem">Labour Form</h3>
-                <h3 id="SideBarItem" style="background-color: #ffc048;">Vendor Form</h3>
-            <h3 id="SideBarItem">Supervisor</h3>
-        </div>
-        <div style="width: 100%;margin-right: 80px;">
-            <div id="tablesearch"><input type="text" placeholder="Search.."><h5>Search</h5></div>
-        <div id="TableMain">
-            <div id="InnerTable">
-                <table id="customers">
-                    <tr id="header">
-                        <th>Serial No</th>
-                        <th>Name</th>
-                        <th>Firm Name</th>
-                        <th>Address</th>
-                        <th>GSTin</th>
-                        <th>Phone Number</th>
-                        <th>
-                            <div style="display: flex;justify-content: center;">
-                                <h4 onclick="tiggerpopup()" id="tablebtn" href=""> Add</h4>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td>value</td>
-                        <td id="TableMenuMain">
-                            <div id="TableMenu">
-                                <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+    <div style="display: flex;justify-content: center;">
+        <div id="Uploadsync">
+            <div style="display: flex;justify-content: end;">
+                <img onclick="CloseUpload()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <div id="filename"></div>
+            <div style="display: flex;justify-content: center;">
+                <a onclick="CloseUpload()" id="popupbtn">Sync</a>
             </div>
         </div>
+    </div>
+    <div style="display: flex;position: relative;">
+        <div id="SideBarMain">
+            <a href="#">
+                <h3 id="SideBarItem">Client Form</h3>
+            </a>
+            <a href="#">
+                <h3 id="SideBarItem">Product Form</h3>
+            </a>
+            <a href="#">
+                <h3 id="SideBarItem">Labour Form</h3>
+            </a>
+            <a href="#" id="setactivate">
+                <h3 id="SideBarItem">Vendor Form</h3>
+            </a>
+            <a href="#">
+                <h3 id="SideBarItem">Supervisor</h3>
+            </a>
+        </div>
+        <div style="width: 100%;margin-right: 80px;">
+            <div id="phonesearch" style="display: flex;justify-content: space-between;width: 105%;margin-left: 0px;">
+                <div id="tablesearch"><input type="text" placeholder="Search..">
+                    <h5>Search</h5>
+                </div>
+                <div style="display: flex;gap: 20px;">
+                    <div>
+                        <!-- Input element for file upload -->
+                        <input type="file" id="fileInput" accept=".csv" onchange="handleFileUpload()">
+                        <!-- Upload button -->
+                        <h5 id="chvendorbtn" onclick="openFileUploader()">Upload</h5>
+                    </div>
+                    <h5 onclick="tiggerpopup()" id="chvendorbtn">Add</h5>
+                </div>
+            </div>
+            <div id="TableMain">
+                <div id="InnerTable">
+                    <table id="customers">
+                        <tr id="header">
+                            <th>Serial No</th>
+                            <th>Name</th>
+                            <th>Firm Name</th>
+                            <th>Address</th>
+                            <th>GSTin</th>
+                            <th>Phone Number</th>
+                            <th>
+                                <div style="display: flex;justify-content: center;">
+                                    <h4 onclick="tiggerpopup()" id="tablebtn" href=""> Add</h4>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./assets/Js/Script.js"></script>

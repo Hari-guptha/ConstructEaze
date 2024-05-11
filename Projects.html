@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets//Css/Main.css">
     <title>ConstructEaze</title>
 </head>
-
-<body>
-        <div id="NavBar">
-            <div id="Logo-Container">
-                <img id="Logo" src="./assets/Image/logo.png" alt="Logo">
-                <h4>ConstructEaze</h4>
-            </div>
-            <a id="logbtn" href="">Logout</a>
+<body id="mainbody">
+    <div id="backgroundBlur" style="height: 150vh;"></div>
+    <div id="NavBar">
+        <div id="Logo-Container">
+            <img id="Logo" src="./assets/Image/logo.png" alt="Logo">
+            <h4>ConstructEaze</h4>
         </div>
+        <a id="logbtn" href="">Logout</a>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div id="PopUp" style="width: 500px;">
+            <div style="display: flex;justify-content: flex-end;">
+                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h4 id="popuptitle">Create Project</h4>
+            <form action="" style="display: flex;flex-direction: column;margin-bottom: 30px;">
+                <input id="popinput" placeholder="Enter the Project Name" type="text">
+                <input id="popinput" placeholder="Enter the site" type="text">
+                <div style="display: flex;justify-content: center;">
+                    <a id="popupbtn">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
     <div id="Main">
         <div id="Projectmain">
             <h4 id="Maintitle">Projects</h4>
             <div id="projectMainMenu" style="display: flex;">
                 <div id="searchfixer" style="display: flex;">
                     <input style="margin: 5px 0;padding: 10px;" id="projetSearch" type="text" placeholder="Search">
-                    <a style="margin:5px 0;border-radius: 0px 5px 5px 0px;align-content: center;font-size: 13.28px;" id="searchbtn"
-                        href="">Search</a>
+                    <a style="margin:5px 0;border-radius: 0px 5px 5px 0px;align-content: center;font-size: 13.28px;"
+                        id="searchbtn" href="">Search</a>
                 </div>
-                <a href="">+ Create Project</a>
+                <a style="cursor: pointer;" onclick="tiggerProject()">+ Create Project</a>
             </div>
         </div>
-        <div id="ProjectCards">
+        <div id="ProjectCards" style="margin-bottom: 30px;">
             <div id="ProjectCard">
                 <div id="avatar">
                     G
@@ -52,207 +66,6 @@
             <div id="ProjectCard">
                 <div id="avatar">
                     G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    G
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    A
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    A
-                </div>
-                <div id="innerprojectcard">
-                    <h3>Gopal School</h3>
-                    <h4>Pondy</h4>
-                    <h5>Gopal kumar</h5>
-                </div>
-            </div>
-            <div id="ProjectCard">
-                <div id="avatar">
-                    A
                 </div>
                 <div id="innerprojectcard">
                     <h3>Gopal School</h3>
@@ -262,6 +75,6 @@
             </div>
         </div>
     </div>
+    <script src="./assets/Js/Script.js"></script>
 </body>
-
 </html>

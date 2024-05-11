@@ -92,7 +92,7 @@
                 <h6 id="OrderDate"></h6>
                 <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
-            <h4 id="popuptitle">Purchase Return</h4>
+            <h4 id="popuptitle">Material Inward</h4>
             <div id="popscoller" style="height: 460px;overflow: auto !important;padding-right: 10px;">
                 <div id="phonesecction1" style="display: flex;gap: 15px;">
                     <div id="popupinnerbox">
@@ -218,212 +218,54 @@
     </div>
     <div style="display: flex;position: relative;">
         <div id="SideBarMain">
+            <a >
+                <h3 id="SideBarItem">To Do</h3>
+            </a>
+
+            <a href="#" id="setactivate">
+                <h3 id="SideBarItem">Material Inward</h3>
+            </a>
             <a>
-                <h3 id="SideBarItem">Purchase Order</h3>
+                <h3 id="SideBarItem">Material Outward</h3>
             </a>
-            <a href="#" style="background-color: #ffc048;">
-                <h3 id="SideBarItem">Purchase Return</h3>
+            <a>
+                <h3 id="SideBarItem">Work Done</h3>
             </a>
+            <a>
+                <h3 id="SideBarItem">Total Expense</h3>
+            </a>
+   
         </div>
         <div id="searchBox" style="width: 100%;margin-right: 80px">
             <div id="phonesearch" style="display: flex;justify-content: space-between;width: 105%;margin-left: 0px;">
                 <div id="tablesearch"><input type="text" placeholder="Search..">
                     <h5>Search</h5>
                 </div>
-                <h5 onclick="tiggerpopup()" id="chvendorbtn">Choose Vendor</h5>
+                <h5 onclick="tiggerpopup()" id="chvendorbtn">Add Task</h5>
             </div>
             <div id="TableMain" style="margin-bottom: 30px;">
                 <div id="InnerTable">
                     <table id="customers">
                         <tr id="header">
                             <th>Serial No</th>
-                            <th>Item Name</th>
-                            <th>Product code</th>
-                            <th>Unit</th>
-                            <th>Category</th>
+                            <th>START DATE</th>
+                            <th>END DATE</th>
+                            <th>TASK</th>
+                            <th> </th>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>value</td>
-
                             <td>value</td>
                             <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
                         </tr>
 
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>value</td>
-
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-
-                        </tr>
                     </table>
                 </div>
             </div>
