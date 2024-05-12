@@ -55,12 +55,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 30px;
     font-weight: 600;
 }
-
 #Logo-Container {
     display: flex;
     align-items: center;
     gap: 5px;
 }
+
 
 #phonenav {
     width: 40px;
@@ -68,6 +68,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 5%;
     filter: grayscale(100%) invert(100%) brightness(1000%);
 }
+
 
 #sideNavItems {
     padding: 20px;
@@ -121,14 +122,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 #Logo-Container h4 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     color: #ffffff;
 }
 
 #Logo {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 #logbtn {
@@ -138,7 +139,12 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     padding: 10px 30px;
     margin: 1% 0;
+    height: fit-content;
     border-radius: 5px;
+}
+#logbtn:hover{
+    background-color: #ffa600;
+    color: white;
 }
 
 
@@ -202,7 +208,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 20px;
     background-color: #ffc048;
     font-size: 15px;
-
+cursor: pointer;
     width: fit-content;
     padding: 10px 30px;
     color: black;
@@ -211,6 +217,9 @@ body::-webkit-scrollbar-thumb {
     border-color: transparent;
 }
 
+#btn:hover{
+    background-color: #ffa600;
+}
 #login2 {
     display: none;
 }
@@ -245,6 +254,9 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     align-content: center;
     margin: 5px;
+}
+#projectMainMenu a:hover{
+    background-color: #3b30a4;
 }
 
 #ProjectCards {
@@ -463,7 +475,7 @@ body::-webkit-scrollbar-thumb {
     display: none;
     background-color: #ffffff;
     height: fit-content;
-    width: 70%;
+    width: 500px;
     margin: 2%;
     padding: 20px;
     border-radius: 10px;
@@ -476,7 +488,20 @@ body::-webkit-scrollbar-thumb {
     display: none;
     background-color: #ffffff;
     height: fit-content;
-    width: 400px;
+    width: 500px;
+    margin: 2%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#DeleteConfirm{
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    background-color: #ffffff;
+    height: fit-content;
+    width: 500px;
     margin: 2%;
     padding: 20px;
     border-radius: 10px;
@@ -519,6 +544,19 @@ a {
     border-color: #4a40a7;
 }
 
+#delete-message{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;padding: 10% 0px;
+}
+
+
+
+#deletebtns{
+    display: flex;
+    gap: 20px;
+}
+
 #popuptitle {
     font-size: 25px;
     margin: 20px 0px;
@@ -546,7 +584,6 @@ a {
 }
 
 
-
 #tablesearch {
     display: flex;
     margin: 30px 0px 30px 60px;
@@ -563,7 +600,7 @@ a {
 
 
 #tablesearch h5:hover {
-    background-color: #2009f1;
+    background-color: #3b30a4;
 }
 
 #tablesearch input {
@@ -577,7 +614,12 @@ a {
     padding: 5px 10px;
     color: rgb(255, 255, 255);
     border-radius: 5px;
+    cursor: pointer;
     background-color: #4CAF50;
+}
+
+#Present:hover {
+    background-color: #2a8f2e;
 }
 
 #Absent {
@@ -586,7 +628,11 @@ a {
     padding: 5px 10px;
     color: rgb(255, 255, 255);
     border-radius: 5px;
-    background-color: red;
+    cursor: pointer;
+    background-color: rgb(222, 61, 61);
+}
+#Absent:hover {
+    background-color: rgb(255, 0, 0);
 }
 
 #chvendorbtn {
@@ -601,7 +647,7 @@ a {
 }
 
 #chvendorbtn:hover {
-    background-color: #2009f1;
+    background-color: #3b30a4;
 }
 
 #OrderId {
@@ -689,7 +735,7 @@ a {
 }
 
 #popsubmitbtn:hover {
-    background-color: #2009f1;
+    background-color: #3b30a4;
 }
 
 .super-color th {
@@ -721,13 +767,58 @@ a {
     #loginimg {
         width: 150px;
     }
-
+    #PopUp {
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        background-color: #ffffff;
+        height: fit-content;
+        width: fit-content;
+        margin: 2%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .phonevendorbox{
+        width: 80% !important;
+    }
+    #Uploadsync {
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        background-color: #ffffff;
+        height: fit-content;
+        width: fit-content;
+        margin: 2%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    
+    #DeleteConfirm{
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        background-color: #ffffff;
+        height: fit-content;
+        width: fit-content;
+        margin: 2%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
     #loginbox input {
         width: 200px;
     }
 
     #NavBar {
+        z-index: 1000;
+        position: fixed;
+        width: 100%;
         padding: 20px 20px;
+    }
+    #searchBox{
+        margin: 30% 0px 30px 0px;
     }
 
     #login1 {
@@ -741,7 +832,15 @@ a {
     #login2 {
         display: block;
     }
-
+    #PopUp{
+        margin-top: 30%;
+    }
+    #Uploadsync{
+        margin-top: 30%;
+    }
+    #DeleteConfirm{
+        margin-top: 30%;
+    }
     #Maintitle {
         width: 100%;
         margin: 30px;
@@ -769,6 +868,7 @@ a {
         padding: 10px !important;
     }
 
+    
     #projectMainMenu a {
         padding: 10px;
     }
@@ -807,6 +907,7 @@ a {
 
     #phonenav {
         display: block;
+        margin-right:10% ;
     }
 
     #sideNavItems {
@@ -838,4 +939,8 @@ a {
     #OrderDate {
         display: none;
     }
+    #phonemarginfix{
+        margin-top: 30%;
+    }
+    
 }

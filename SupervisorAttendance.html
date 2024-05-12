@@ -113,9 +113,12 @@
             </a>
         </div>
         <div id="searchBox" style="width: 100%;margin-right: 80px">
-            <div>
+            <div id="phonesearch" style="display: flex;justify-content: space-between;width: 105%;margin-left: 0px;">
                 <div id="tablesearch"><input type="text" placeholder="Search..">
                     <h5>Search</h5>
+                </div>
+                <div style="display: flex;gap: 20px;">
+                    <h6 style="width: 100px;" id="OrderDate"></h6>
                 </div>
             </div>
             <div id="TableMain">
@@ -317,6 +320,9 @@
         </div>
     </div>
     <script src="./assets/Js/Script.js"></script>
+    <script>
+        document.getElementById("OrderDate").innerText = getCurrentDate();
+    </script>
 </body>
 
 </html>

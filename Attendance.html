@@ -72,12 +72,22 @@
             <img id="Logo" src="./assets/Image/logo.png" alt="Logo">
             <h4>ConstructEaze</h4>
         </div>
-       <div id="NavItems">
-            <a href="#"><h3 id="NavItem">Master</h3></a>
-            <a href="#"><h3 id="NavItem">Labour Management</h3></a>
-            <a href="#"><h3 id="NavItem">Purchase Management</h3></a>
-            <a href="#"><h3 id="NavItem">Site Activity</h3></a>
-            <a href="#"><h3 id="NavItem">Report Generation</h3></a>
+        <div id="NavItems">
+            <a href="#">
+                <h3 id="NavItem">Master</h3>
+            </a>
+            <a href="#">
+                <h3 id="NavItem">Labour Management</h3>
+            </a>
+            <a href="#">
+                <h3 id="NavItem">Purchase Management</h3>
+            </a>
+            <a href="#">
+                <h3 id="NavItem">Site Activity</h3>
+            </a>
+            <a href="#">
+                <h3 id="NavItem">Report Generation</h3>
+            </a>
         </div>
         <a id="logbtn" href="">Logout</a>
         <div onclick="tiggermenu()" id="phonenav">
@@ -111,9 +121,12 @@
             <h3 id="SideBarItem">Supervisor Attendance</h3>
         </div>
         <div id="searchBox" style="width: 100%;margin-right: 80px">
-            <div>
+            <div id="phonesearch" style="display: flex;justify-content: space-between;width: 105%;margin-left: 0px;">
                 <div id="tablesearch"><input type="text" placeholder="Search..">
                     <h5>Search</h5>
+                </div>
+                <div style="display: flex;gap: 20px;">
+                    <h6 style="width: 100px;" id="OrderDate"></h6>
                 </div>
             </div>
             <div id="TableMain">
@@ -417,6 +430,9 @@
         </div>
     </div>
     <script src="./assets/Js/Script.js"></script>
+    <script>
+        document.getElementById("OrderDate").innerText = getCurrentDate();
+    </script>
 </body>
 
 </html>

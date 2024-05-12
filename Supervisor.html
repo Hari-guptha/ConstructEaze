@@ -73,6 +73,7 @@
             <h4>ConstructEaze</h4>
         </div>
         <div id="NavItems">
+            
             <a href="#"><h3 id="NavItem">Master</h3></a>
             <a href="#"><h3 id="NavItem">Labour Management</h3></a>
             <a href="#"><h3 id="NavItem">Purchase Management</h3></a>
@@ -86,7 +87,7 @@
     </div>
     <div id="backgroundBlur"> </div>
     <div style="display: flex;justify-content: center;">
-        <div id="PopUp" style="width: 500px;">
+        <div id="PopUp" >
             <div style="display: flex;justify-content: end;">
                 <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
@@ -109,6 +110,20 @@
             <div id="filename"></div>
             <div style="display: flex;justify-content: center;">
                 <a onclick="CloseUpload()" id="popupbtn">Sync</a>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div id="DeleteConfirm">
+            <div style="display: flex;justify-content: end;">
+                <img onclick="Deleteconfirmclose()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h5 id="delete-message">Please confirm the deletion of the row</h5>
+            <div style="display: flex;justify-content: center;margin-bottom: 20px;">
+                <div id="deletebtns">
+                    <h5 id="Present">Confirm</h5>
+                    <h5 id="Absent">Cancel</h5>
+                </div>
             </div>
         </div>
     </div>
@@ -154,9 +169,7 @@
                             <th>Emil Id</th>
                             <th>Password</th>
                             <th>
-                                <div style="display: flex;justify-content: center;">
-                                    <h4 onclick="tiggerpopup()" id="tablebtn" href=""> Add</h4>
-                                </div>
+                          
                             </th>
                         </tr>
                         <tr>
@@ -168,7 +181,7 @@
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -181,7 +194,7 @@
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -194,7 +207,7 @@
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>

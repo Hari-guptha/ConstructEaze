@@ -86,7 +86,7 @@
     </div>
     <div id="backgroundBlur"> </div>
     <div style="display: flex;justify-content: center;">
-        <div id="PopUp" style="width: 500px;">
+        <div id="PopUp" >
             <div style="display: flex;justify-content: end;">
                 <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
@@ -113,6 +113,20 @@
             </div>
         </div>
     </div>
+    <div style="display: flex;justify-content: center;">
+        <div id="DeleteConfirm">
+            <div style="display: flex;justify-content: end;">
+                <img onclick="Deleteconfirmclose()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h5 id="delete-message">Please confirm the deletion of the row</h5>
+            <div style="display: flex;justify-content: center;margin-bottom: 20px;">
+                <div id="deletebtns">
+                    <h5 id="Present">Confirm</h5>
+                    <h5 id="Absent">Cancel</h5>
+                </div>
+            </div>
+        </div>
+    </div>
     <div style="display: flex;position: relative;">
         <div id="SideBarMain">
             <h3 id="SideBarItem">Client Form</h3>
@@ -121,7 +135,7 @@
             <h3 id="SideBarItem">Vendor Form</h3>
             <h3 id="SideBarItem">Supervisor</h3>
         </div>
-        <div style="width: 100%;margin-right: 80px;">
+        <div id="phonemarginfix" style="width: 100%;margin-right: 80px;">
             <div id="phonesearch" style="display: flex;justify-content: space-between;width: 105%;margin-left: 0px;">
                 <div id="tablesearch"><input type="text" placeholder="Search..">
                     <h5>Search</h5>
@@ -146,9 +160,7 @@
                             <th>Category</th>
                             <th>Wages Per Shift</th>
                             <th>
-                                <div style="display: flex;justify-content: center;">
-                                    <h4 onclick="tiggerpopup()" id="tablebtn" href=""> Add</h4>
-                                </div>
+                          
                             </th>
                         </tr>
                         <tr>
@@ -159,8 +171,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -172,8 +184,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -185,8 +197,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -198,8 +210,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -211,8 +223,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -224,8 +236,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -237,8 +249,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -250,8 +262,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -263,8 +275,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -276,8 +288,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -289,8 +301,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -302,8 +314,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -315,8 +327,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -328,48 +340,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td id="TableMenuMain">
-                                <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td id="TableMenuMain">
-                                <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td>value</td>
-                            <td id="TableMenuMain">
-                                <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -382,8 +354,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -395,8 +367,48 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td>value</td>
+                            <td id="TableMenuMain">
+                                <div id="TableMenu">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
@@ -408,8 +420,8 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <img src="./assets/Image/icons/edit.svg" alt="edit">
-                                    <img src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                                     <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                                  <img  onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                                 </div>
                             </td>
                         </tr>
