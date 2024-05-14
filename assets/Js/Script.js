@@ -3,7 +3,8 @@ const tiggerpopup = () => {
     const blur = document.getElementById('backgroundBlur');
     pop.style.display = "block";
     blur.style.display = "block";
-    document.body.style.overflow = "hidden"
+  
+
 }
 
 
@@ -12,8 +13,9 @@ const ClosePopUp = () => {
     const blur = document.getElementById('backgroundBlur');
     pop.style.display = "none";
     blur.style.display = "none";
-    Body.style.overflow = "auto"
-    document.body.style.overflow = "auto"
+  
+    
+
 }
 
 
@@ -22,16 +24,80 @@ const tiggermenu = () => {
     const blur = document.getElementById('backgroundBlur');
     pop.style.display = "block";
     blur.style.display = "block";
-    document.body.style.overflow = "hidden"
 }
 
 const Vendorpopup = () => {
-  const pop = document.querySelector('vendor');
+  const pop = document.getElementsByClassName('vendor')
   const blur = document.getElementById('backgroundBlur');
-  pop.style.display = "block"
+  for (let i = 0; i < pop.length; i++) {
+    const element = pop[i];
+    element.style.display = "block"
+  }
+  // pop.style.display = "block"
   blur.style.display = "block";
-  document.body.style.overflow = "hidden"
 }
+
+const ClosVendorpopup = () => {
+  const pop = document.getElementsByClassName('vendor')
+  const blur = document.getElementById('backgroundBlur');
+  for (let i = 0; i < pop.length; i++) {
+    const element = pop[i];
+    element.style.display = "none"
+  }
+  // pop.style.display = "block"
+  blur.style.display = " none";
+
+
+
+}
+
+const Labourpopup = () => {
+  const pop = document.getElementsByClassName('Labour')
+  const blur = document.getElementById('backgroundBlur');
+  for (let i = 0; i < pop.length; i++) {
+    const element = pop[i];
+    element.style.display = "block"
+  }
+  // pop.style.display = "block"
+  blur.style.display = "block";
+}
+
+const closeLabourpopup = () => {
+  const pop = document.getElementsByClassName('Labour')
+  const blur = document.getElementById('backgroundBlur');
+  for (let i = 0; i < pop.length; i++) {
+    const element = pop[i];
+    element.style.display = "none"
+  }
+  // pop.style.display = "block"
+  blur.style.display = " none";
+
+
+}
+
+const Clientpopup = () => {
+  const pop = document.getElementsByClassName('Client')
+  const blur = document.getElementById('backgroundBlur');
+  for (let i = 0; i < pop.length; i++) {
+    const element = pop[i];
+    element.style.display = "block"
+  }
+  // pop.style.display = "block"
+  blur.style.display = "block";
+}
+
+const closeClientpopup = () => {
+  const pop = document.getElementsByClassName('Client')
+  const blur = document.getElementById('backgroundBlur');
+  for (let i = 0; i < pop.length; i++) {
+    const element = pop[i];
+    element.style.display = "none"
+  }
+  // pop.style.display = "block"
+  blur.style.display = " none";
+
+}
+
 
 
 
@@ -41,7 +107,7 @@ const tiggerProject = () => {
     blur.style.display = "block";
     pop.style.display = "block";
     Body.style.overflow = "hidden";
-    document.body.style.overflow = "hidden"
+
 }
 
 
@@ -50,7 +116,7 @@ const Closemenu = () => {
     const blur = document.getElementById('backgroundBlur');
     pop.style.display = "none";
     blur.style.display = "none";
-    document.body.style.overflow = "auto"
+
 }
 
   // Function to increase the number
@@ -75,7 +141,7 @@ const Closemenu = () => {
     const blur = document.getElementById('backgroundBlur');
     pop.style.display = "none";
     blur.style.display = "none";
-    document.body.style.overflow = "auto"
+
 }
 
    // Function to open file uploader when "Upload" is clicked
@@ -92,7 +158,7 @@ const Closemenu = () => {
       const blur = document.getElementById('backgroundBlur');
       pop.style.display = "block";
       blur.style.display = "block";
-      document.body.style.overflow = "hidden"
+  
     }
 }
 
@@ -101,7 +167,7 @@ function Deleteconfirm(){
   const blur = document.getElementById('backgroundBlur');
   pop.style.display = "block";
   blur.style.display = "block";
-  document.body.style.overflow = "hidden"
+
 }
 
 
@@ -110,7 +176,7 @@ function Deleteconfirmclose(){
   const blur = document.getElementById('backgroundBlur');
   pop.style.display = "none";
   blur.style.display = "none";
-  document.body.style.overflow = "auto"
+
 }
 
 const tokenSet = new Set(); // Set to store generated tokens

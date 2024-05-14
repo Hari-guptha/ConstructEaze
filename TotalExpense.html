@@ -96,43 +96,57 @@
     </div>
     <div id="backgroundBlur"> </div>
     <div style="display: flex;justify-content: center;">
-        <div id="PopUp" class="vendor">
+        <div id="exppop" class="vendor">
             <div style="display: flex;justify-content: flex-end;">
-                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+                <img onclick="ClosVendorpopup()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
-            <h4 id="popuptitle">To Do</h4>
-            <form action="" style="display: flex;flex-direction: column;">
-                <input id="popinput" placeholder="Enter the Start Date" type="text">
-                <input id="popinput" placeholder="Enter the End Date" type="text">
-                <input id="popinput" placeholder="Enter the Task" type="text">
+            <h4 id="popuptitle">Vendor Payment</h4>
+            <form action="" style="display: flex;flex-direction: column;justify-content: center;">
+                <input id="popinput" placeholder="Enter the Start Date" type="date">
+                <input id="popinput" placeholder="Enter the name of the Material" type="text">
+                <input id="popinput" placeholder="Enter the Quantity" type="text">
+                <input id="popinput" list="browsers" placeholder="Enter the Unit" type="text">
+                <datalist id="browsers">
+                    <option value="Tonnes">
+                    <option value="Kg">
+                    <option value="Cubic Meters">
+                    <option value="Square Meters">
+                    <option value="Meter">
+                    <option value="Liters">
+                    <option value="Gallons">
+                </datalist>
+                <input id="popinput" placeholder="Enter the Unit Price" type="text">
+                <input id="popinput" placeholder="Enter the Amount" type="text">
                 <div style="display: flex;justify-content: center;">
                     <a id="popupbtn">Submit</a>
                 </div>
             </form>
         </div>
-        <div id="PopUp">
+        <div id="exppop" class="Labour">
             <div style="display: flex;justify-content: flex-end;">
-                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+                <img onclick="closeLabourpopup()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
-            <h4 id="popuptitle">To Do</h4>
+            <h4 id="popuptitle">Labour Payment</h4>
             <form action="" style="display: flex;flex-direction: column;">
-                <input id="popinput" placeholder="Enter the Start Date" type="text">
-                <input id="popinput" placeholder="Enter the End Date" type="text">
-                <input id="popinput" placeholder="Enter the Task" type="text">
+                <input id="popinput" placeholder="Enter the Date" type="date">
+                <input id="popinput" placeholder="Enter the Labour Name" type="text">
+                <input id="popinput" placeholder="Enter the Amount" type="text">
                 <div style="display: flex;justify-content: center;">
                     <a id="popupbtn">Submit</a>
                 </div>
             </form>
         </div>
-        <div id="PopUp">
+        <div id="exppop" class="Client">
             <div style="display: flex;justify-content: flex-end;">
-                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+                <img onclick="closeClientpopup()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
-            <h4 id="popuptitle">To Do</h4>
+            <h4 id="popuptitle">Client Payment</h4>
             <form action="" style="display: flex;flex-direction: column;">
-                <input id="popinput" placeholder="Enter the Start Date" type="text">
-                <input id="popinput" placeholder="Enter the End Date" type="text">
-                <input id="popinput" placeholder="Enter the Task" type="text">
+                <input id="popinput" placeholder="Enter the Date" type="date">
+                <input id="popinput" placeholder="Enter the Name of Client" type="text">
+                <input id="popinput" placeholder="Enter the As" type="text">
+                <input id="popinput" placeholder="Enter the By" type="text">
+                <input id="popinput" placeholder="Enter the Payment" type="text">
                 <div style="display: flex;justify-content: center;">
                     <a id="popupbtn">Submit</a>
                 </div>
@@ -141,7 +155,7 @@
     </div>
     <div style="display: flex;position: relative;">
         <div id="SideBarMain">
-            <a href="#" id="setactivate">
+            <a>
                 <h3 id="SideBarItem">To Do</h3>
             </a>
 
@@ -154,7 +168,7 @@
             <a>
                 <h3 id="SideBarItem">Work Done</h3>
             </a>
-            <a>
+            <a href="#" id="setactivate">
                 <h3 id="SideBarItem">Total Expense</h3>
             </a>
 
@@ -162,9 +176,9 @@
         <div id="pybtns" style="width: 100%;margin-right: 80px">
             <div style="display: flex;justify-content: center;margin-top: 10%;margin-left: 80px;">
                 <div>
-                    <h3  onclick="Vendorpopup()"  id="pybtn">Vendor Payments</h3>
-                    <h3  onclick="Labourpopup()" id="pybtn">Labour Payments</h3>
-                    <h3  onclick="Clientpopup()" id="pybtn">Client Payments</h3>
+                    <h3 onclick="Vendorpopup()" id="pybtn">Vendor Payments</h3>
+                    <h3 onclick="Labourpopup()" id="pybtn">Labour Payments</h3>
+                    <h3 onclick="Clientpopup()" id="pybtn">Client Payments</h3>
                 </div>
             </div>
         </div>

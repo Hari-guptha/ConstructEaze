@@ -55,6 +55,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 30px;
     font-weight: 600;
 }
+
 #Logo-Container {
     display: flex;
     align-items: center;
@@ -142,7 +143,8 @@ body::-webkit-scrollbar-thumb {
     height: fit-content;
     border-radius: 5px;
 }
-#logbtn:hover{
+
+#logbtn:hover {
     background-color: #ffa600;
     color: white;
 }
@@ -208,7 +210,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 20px;
     background-color: #ffc048;
     font-size: 15px;
-cursor: pointer;
+    cursor: pointer;
     width: fit-content;
     padding: 10px 30px;
     color: black;
@@ -217,9 +219,10 @@ cursor: pointer;
     border-color: transparent;
 }
 
-#btn:hover{
+#btn:hover {
     background-color: #ffa600;
 }
+
 #login2 {
     display: none;
 }
@@ -255,7 +258,8 @@ cursor: pointer;
     align-content: center;
     margin: 5px;
 }
-#projectMainMenu a:hover{
+
+#projectMainMenu a:hover {
     background-color: #3b30a4;
 }
 
@@ -482,6 +486,21 @@ cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+
+
+#exppop {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    background-color: #ffffff;
+    height: fit-content;
+    width: 500px;
+    margin: 2%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 #Uploadsync {
     position: absolute;
     z-index: 1000;
@@ -495,7 +514,7 @@ cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#DeleteConfirm{
+#DeleteConfirm {
     position: absolute;
     z-index: 1000;
     display: none;
@@ -507,7 +526,8 @@ cursor: pointer;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-#filename{
+
+#filename {
     text-align: center;
     margin: 20px 0;
 }
@@ -544,15 +564,16 @@ a {
     border-color: #4a40a7;
 }
 
-#delete-message{
+#delete-message {
     font-size: 14px;
     font-weight: 400;
-    text-align: center;padding: 10% 0px;
+    text-align: center;
+    padding: 10% 0px;
 }
 
 
 
-#deletebtns{
+#deletebtns {
     display: flex;
     gap: 20px;
 }
@@ -631,6 +652,7 @@ a {
     cursor: pointer;
     background-color: rgb(222, 61, 61);
 }
+
 #Absent:hover {
     background-color: rgb(255, 0, 0);
 }
@@ -743,7 +765,7 @@ a {
 }
 
 
-#pybtn{
+#pybtn {
     background-color: #4a40a7;
     padding: 20px 50px;
     color: white;
@@ -776,9 +798,14 @@ a {
         width: 100%;
     }
 
+    #popinput {
+        width: 50%;
+    }
+
     #loginimg {
         width: 150px;
     }
+
     #PopUp {
         position: absolute;
         z-index: 1000;
@@ -791,9 +818,21 @@ a {
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
-    .phonevendorbox{
+
+    .phonevendorbox {
         width: 80% !important;
     }
+
+    #backgroundBlur {
+        position: absolute;
+        display: none;
+        z-index: 888;
+        height: 110vh;
+        width: 100vw;
+        background-color: #000000;
+        opacity: 60%;
+    }
+
     #Uploadsync {
         position: absolute;
         z-index: 1000;
@@ -806,8 +845,8 @@ a {
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
-    
-    #DeleteConfirm{
+
+    #DeleteConfirm {
         position: absolute;
         z-index: 1000;
         display: none;
@@ -819,6 +858,7 @@ a {
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
+
     #loginbox input {
         width: 200px;
     }
@@ -829,10 +869,12 @@ a {
         width: 100%;
         padding: 20px 20px;
     }
-    #searchBox{
+
+    #searchBox {
         margin: 30% 0px 30px 0px;
     }
-    #pybtns{
+
+    #pybtns {
         margin: 30% 0px 30px 0px;
     }
 
@@ -847,15 +889,19 @@ a {
     #login2 {
         display: block;
     }
-    #PopUp{
+
+    #PopUp {
         margin-top: 30%;
     }
-    #Uploadsync{
+
+    #Uploadsync {
         margin-top: 30%;
     }
-    #DeleteConfirm{
+
+    #DeleteConfirm {
         margin-top: 30%;
     }
+
     #Maintitle {
         width: 100%;
         margin: 30px;
@@ -868,6 +914,11 @@ a {
 
     #Projectmain {
         flex-wrap: wrap;
+    }
+
+    #exppop {
+        margin-top: 30%;
+        width: 300px;
     }
 
     #Projectmain input {
@@ -883,7 +934,7 @@ a {
         padding: 10px !important;
     }
 
-    
+
     #projectMainMenu a {
         padding: 10px;
     }
@@ -922,7 +973,7 @@ a {
 
     #phonenav {
         display: block;
-        margin-right:10% ;
+        margin-right: 10%;
     }
 
     #sideNavItems {
@@ -954,8 +1005,9 @@ a {
     #OrderDate {
         display: none;
     }
-    #phonemarginfix{
+
+    #phonemarginfix {
         margin-top: 30%;
     }
-    
+
 }
