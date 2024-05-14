@@ -167,7 +167,6 @@ function Deleteconfirm(){
   const blur = document.getElementById('backgroundBlur');
   pop.style.display = "block";
   blur.style.display = "block";
-
 }
 
 
