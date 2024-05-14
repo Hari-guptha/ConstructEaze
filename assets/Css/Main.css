@@ -743,6 +743,18 @@ a {
 }
 
 
+#pybtn{
+    background-color: #4a40a7;
+    padding: 20px 50px;
+    color: white;
+    font-weight: 400;
+    margin: 30px 0px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
 /* -------------------responsive------------------- */
 
 @media only screen and (max-width:600px) {
@@ -818,6 +830,9 @@ a {
         padding: 20px 20px;
     }
     #searchBox{
+        margin: 30% 0px 30px 0px;
+    }
+    #pybtns{
         margin: 30% 0px 30px 0px;
     }
 

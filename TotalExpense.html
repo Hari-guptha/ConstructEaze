@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------------Fav-------------------- -->
+    <link rel="shortcut icon" href="./assets/Image/logo.png" type="image/x-icon">
+    <!-- -----------------------css--------------------------------- -->
+    <link rel="stylesheet" href="./assets/Css/Main.css">
+    <title>ConstructEaze</title>
+</head>
+
+<body id="nonscroll">
+    <div style="display: flex;justify-content: left;">
+        <div id="phoneSidebar">
+            <div style="display: flex;justify-content: end;">
+                <img onclick="Closemenu()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <div id="sideNavItems">
+                <div class="dropdown">
+                    <h3 id="NavItem">MASTER</h3>
+                    <div class="dropdown-content">
+                        <a href="#">client form</a>
+                        <a href="#">product form</a>
+                        <a href="#">labour form</a>
+                        <a href="#">vendor form</a>
+                        <a href="#">Supervisor</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <h3 id="NavItem">LABOUR MANAGEMENT</h3>
+                    <div class="dropdown-content">
+                        <a href="#">Attendance</a>
+                        <a href="#">Supervisor Attendance</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <h3 id="NavItem">PURCHASE MANAGEMENT</h3>
+                    <div class="dropdown-content">
+                        <a href="#">Purchase order</a>
+                        <a href="#">Purchase Return</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <h3 id="NavItem">SITE ACTIVITY</h3>
+                    <div class="dropdown-content">
+                        <a href="#">To Do</a>
+                        <a href="#">Check List</a>
+                        <a href="#">Material Inward</a>
+                        <a href="#">Material Outward</a>
+                        <a href="#">Work Done</a>
+                        <a href="#">Total Expense</a>
+                        <a href="#">Drawings</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <h3 id="NavItem">REPORT GENERATION</h3>
+                    <div class="dropdown-content">
+                        <a href="#">Labour Wise Report</a>
+                        <a href="#">Vendor Wise Report</a>
+                        <a href="#">Payment Details Report</a>
+                        <a href="#">Material Wise Report</a>
+                        <a href="#">Overall Account Statement</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="NavBar">
+        <div id="Logo-Container">
+            <img id="Logo" src="./assets/Image/logo.png" alt="Logo">
+            <h4>ConstructEaze</h4>
+        </div>
+        <div id="NavItems">
+            <a href="#">
+                <h3 id="NavItem">Master</h3>
+            </a>
+            <a href="#">
+                <h3 id="NavItem">Labour Management</h3>
+            </a>
+            <a href="#">
+                <h3 id="NavItem">Purchase Management</h3>
+            </a>
+            <a href="#">
+                <h3 id="NavItem">Site Activity</h3>
+            </a>
+            <a href="#">
+                <h3 id="NavItem">Report Generation</h3>
+            </a>
+        </div>
+        <a id="logbtn" href="">Logout</a>
+        <div onclick="tiggermenu()" id="phonenav">
+            <img src="./assets/Image/icons/menu.svg" alt="">
+        </div>
+    </div>
+    <div id="backgroundBlur"> </div>
+    <div style="display: flex;justify-content: center;">
+        <div id="PopUp" class="vendor">
+            <div style="display: flex;justify-content: flex-end;">
+                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h4 id="popuptitle">To Do</h4>
+            <form action="" style="display: flex;flex-direction: column;">
+                <input id="popinput" placeholder="Enter the Start Date" type="text">
+                <input id="popinput" placeholder="Enter the End Date" type="text">
+                <input id="popinput" placeholder="Enter the Task" type="text">
+                <div style="display: flex;justify-content: center;">
+                    <a id="popupbtn">Submit</a>
+                </div>
+            </form>
+        </div>
+        <div id="PopUp">
+            <div style="display: flex;justify-content: flex-end;">
+                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h4 id="popuptitle">To Do</h4>
+            <form action="" style="display: flex;flex-direction: column;">
+                <input id="popinput" placeholder="Enter the Start Date" type="text">
+                <input id="popinput" placeholder="Enter the End Date" type="text">
+                <input id="popinput" placeholder="Enter the Task" type="text">
+                <div style="display: flex;justify-content: center;">
+                    <a id="popupbtn">Submit</a>
+                </div>
+            </form>
+        </div>
+        <div id="PopUp">
+            <div style="display: flex;justify-content: flex-end;">
+                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h4 id="popuptitle">To Do</h4>
+            <form action="" style="display: flex;flex-direction: column;">
+                <input id="popinput" placeholder="Enter the Start Date" type="text">
+                <input id="popinput" placeholder="Enter the End Date" type="text">
+                <input id="popinput" placeholder="Enter the Task" type="text">
+                <div style="display: flex;justify-content: center;">
+                    <a id="popupbtn">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="display: flex;position: relative;">
+        <div id="SideBarMain">
+            <a href="#" id="setactivate">
+                <h3 id="SideBarItem">To Do</h3>
+            </a>
+
+            <a>
+                <h3 id="SideBarItem">Material Inward</h3>
+            </a>
+            <a>
+                <h3 id="SideBarItem">Material Outward</h3>
+            </a>
+            <a>
+                <h3 id="SideBarItem">Work Done</h3>
+            </a>
+            <a>
+                <h3 id="SideBarItem">Total Expense</h3>
+            </a>
+
+        </div>
+        <div id="pybtns" style="width: 100%;margin-right: 80px">
+            <div style="display: flex;justify-content: center;margin-top: 10%;margin-left: 80px;">
+                <div>
+                    <h3  onclick="Vendorpopup()"  id="pybtn">Vendor Payments</h3>
+                    <h3  onclick="Labourpopup()" id="pybtn">Labour Payments</h3>
+                    <h3  onclick="Clientpopup()" id="pybtn">Client Payments</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/Js/Script.js"></script>
+</body>
+
+</html>

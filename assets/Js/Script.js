@@ -25,6 +25,15 @@ const tiggermenu = () => {
     document.body.style.overflow = "hidden"
 }
 
+const Vendorpopup = () => {
+  const pop = document.querySelector('vendor');
+  const blur = document.getElementById('backgroundBlur');
+  pop.style.display = "block"
+  blur.style.display = "block";
+  document.body.style.overflow = "hidden"
+}
+
+
 
 const tiggerProject = () => {
     const blur = document.getElementById('backgroundBlur');
