@@ -42,10 +42,11 @@
                         <a href="#">Purchase Return</a>
                     </div>
                 </div>
-                <div class="dropdown">
+<div class="dropdown">
                     <h3 id="NavItem">SITE ACTIVITY</h3>
                     <div class="dropdown-content">
                         <a href="#">To Do</a>
+                        <a href="#">Notes</a>
                         <a href="#">Check List</a>
                         <a href="#">Material Inward</a>
                         <a href="#">Material Outward</a>
@@ -88,11 +89,17 @@
     <div style="display: flex;justify-content: center;">
         <div id="PopUp" class="phonevendorbox" style="width: fit-content;">
             <div style="display: flex;justify-content: space-between;">
-                <h4 id="OrderId"></h4>
+                <!-- <h4 id="OrderId"></h4> -->
                 <h6 id="OrderDate"></h6>
                 <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
             <h4 id="popuptitle">Material Inward</h4>
+            <div style="display: flex;justify-content: center;padding: 30px 0px;">
+                <div style="display: flex" id="searchbtninmi">
+                    <input type="text" placeholder="Enter the Product Name">
+                    <h5>Search</h5>
+                </div>
+            </div>
             <div id="popscoller" style="height: 460px;overflow: auto !important;padding-right: 10px;">
                 <div id="phonesecction1" style="display: flex;gap: 15px;">
                     <div id="popupinnerbox">
@@ -235,7 +242,9 @@
             <a >
                 <h3 id="SideBarItem">To Do</h3>
             </a>
-
+            <a href="#">
+                <h3 id="SideBarItem">Notes</h3>
+            </a>
             <a href="#" id="setactivate">
                 <h3 id="SideBarItem">Material Inward</h3>
             </a>

@@ -42,10 +42,11 @@
                         <a href="#">Purchase Return</a>
                     </div>
                 </div>
-                <div class="dropdown">
+<div class="dropdown">
                     <h3 id="NavItem">SITE ACTIVITY</h3>
                     <div class="dropdown-content">
                         <a href="#">To Do</a>
+                        <a href="#">Notes</a>
                         <a href="#">Check List</a>
                         <a href="#">Material Inward</a>
                         <a href="#">Material Outward</a>
@@ -102,13 +103,13 @@
             </div>
             <h4 id="popuptitle">CLIENT DETAILS</h4>
             <form action="" style="display: flex;flex-direction: column;">
-                <input id="popinput" placeholder="Enter the Name" type="text">
-                <input id="popinput" placeholder="Enter the Phone Number" type="text">
-                <input id="popinput" placeholder="Enter the Address" type="text">
-                <input id="popinput" placeholder="Enter the Pan Number" type="text">
-                <input id="popinput" placeholder="Enter the Site Address" type="text">
+                <input id="popinput" readonly placeholder="Nandha Gopal" type="text">
+                <input id="popinput" readonly placeholder="12/12/12" type="text">
                 <div style="display: flex;justify-content: center;">
-                    <a id="popupbtn">Submit</a>
+                    <div id="TableMenu" style="margin: 10% 0;">
+                        <h4 onclick="ClosePopUp()"  id="Present">Present</h4>
+                        <h4 onclick="ClosePopUp()"  id="Absent">Absent</h4>
+                    </div>
                 </div>
             </form>
         </div>
@@ -126,8 +127,114 @@
                 <div id="tablesearch"><input type="text" placeholder="Search..">
                     <h5>Search</h5>
                 </div>
-                <div style="display: flex;gap: 20px;">
-                    <h6 style="width: 100px;" id="OrderDate"></h6>
+            </div>
+            <div style="display: flex;justify-content: center;width: 105%;">
+                <div id="supercounter">
+                    <div id="counter">
+                        <h5>Builder</h5>
+                        <div style="display: flex;gap: 20px;">
+                            <div>
+                                <h6>Male</h6>
+                                <h6>23</h6>
+                            </div>
+                            <div>
+                                <h6>Female</h6>
+                                <h6>15</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="counter">
+                        <h5>Builder</h5>
+                        <div style="display: flex;gap: 20px;">
+                            <div>
+                                <h6>Male</h6>
+                                <h6>23</h6>
+                            </div>
+                            <div>
+                                <h6>Female</h6>
+                                <h6>15</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="counter">
+                        <h5>Builder</h5>
+                        <div style="display: flex;gap: 20px;">
+                            <div>
+                                <h6>Male</h6>
+                                <h6>23</h6>
+                            </div>
+                            <div>
+                                <h6>Female</h6>
+                                <h6>15</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="counter">
+                        <h5>Builder</h5>
+                        <div style="display: flex;gap: 20px;">
+                            <div>
+                                <h6>Male</h6>
+                                <h6>23</h6>
+                            </div>
+                            <div>
+                                <h6>Female</h6>
+                                <h6>15</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="counter">
+                        <h5>Builder</h5>
+                        <div style="display: flex;gap: 20px;">
+                            <div>
+                                <h6>Male</h6>
+                                <h6>23</h6>
+                            </div>
+                            <div>
+                                <h6>Female</h6>
+                                <h6>15</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="counter">
+                        <h5>Builder</h5>
+                        <div style="display: flex;gap: 20px;">
+                            <div>
+                                <h6>Male</h6>
+                                <h6>23</h6>
+                            </div>
+                            <div>
+                                <h6>Female</h6>
+                                <h6>15</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="counter">
+                        <h5>Builder</h5>
+                        <div style="display: flex;gap: 20px;">
+                            <div>
+                                <h6>Male</h6>
+                                <h6>23</h6>
+                            </div>
+                            <div>
+                                <h6>Female</h6>
+                                <h6>15</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="counter">
+                        <h5>Builder</h5>
+                        <div style="display: flex;gap: 20px;">
+                            <div>
+                                <h6>Male</h6>
+                                <h6>23</h6>
+                            </div>
+                            <div>
+                                <h6>Female</h6>
+                                <h6>15</h6>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div id="TableMain">
@@ -152,8 +259,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -166,8 +272,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -180,8 +285,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -194,8 +298,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -208,8 +311,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -222,8 +324,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -236,8 +337,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -250,8 +350,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -264,8 +363,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -278,8 +376,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -292,8 +389,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -306,8 +402,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -320,8 +415,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -334,8 +428,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -349,8 +442,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -363,8 +455,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -377,8 +468,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -392,8 +482,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -406,8 +495,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>
@@ -420,8 +508,7 @@
                             <td>value</td>
                             <td id="TableMenuMain">
                                 <div id="TableMenu">
-                                    <h4 id="Present">Present</h4>
-                                    <h4 id="Absent">Absent</h4>
+                                    <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
                                 </div>
                             </td>
                         </tr>

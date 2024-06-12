@@ -11,7 +11,7 @@
     <title>ConstructEaze</title>
 </head>
 
-<body id="nonscroll" style="overflow: hidden;">
+<body id="nonscroll">
     <div style="display: flex;justify-content: left;">
         <div id="phoneSidebar">
             <div style="display: flex;justify-content: end;">
@@ -42,7 +42,7 @@
                         <a href="#">Purchase Return</a>
                     </div>
                 </div>
-<div class="dropdown">
+                <div class="dropdown">
                     <h3 id="NavItem">SITE ACTIVITY</h3>
                     <div class="dropdown-content">
                         <a href="#">To Do</a>
@@ -96,47 +96,83 @@
         </div>
     </div>
     <div id="backgroundBlur"> </div>
+    <div style="display: flex;justify-content: center;">
+        <div id="PopUp">
+            <div style="display: flex;justify-content: flex-end;">
+                <img onclick="ClosePopUp()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h4 id="popuptitle">Notes</h4>
+            <form action="" style="display: flex;flex-direction: column;">
+                <input id="popinput" placeholder="Enter the Title" type="text">
+                <textarea id="popinput" style="height: 200px;" placeholder="Enter the text"></textarea>  
+                <div style="display: flex;justify-content: center;">
+                    <a id="popupbtn">Save</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div id="DeleteConfirm">
+            <div style="display: flex;justify-content: end;">
+                <img onclick="Deleteconfirmclose()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
+            </div>
+            <h5 id="delete-message">Please confirm the deletion of the Note</h5>
+            <div style="display: flex;justify-content: center;margin-bottom: 20px;">
+                <div id="deletebtns">
+                    <h5 id="Present">Confirm</h5>
+                    <h5 id="Absent">Cancel</h5>
+                </div>
+            </div>
+        </div>
+    </div>
     <div style="display: flex;position: relative;">
         <div id="SideBarMain">
-            <a>
-                <h3 id="SideBarItem">Labour Wise Report</h3>
-            </a>
-
-            <a>
-                <h3 id="SideBarItem">Vendor Wise Report</h3>
-            </a>
-            <a>
-                <h3 id="SideBarItem">Payment Details Report</h3>
+            <a href="#">
+                <h3 id="SideBarItem">To Do</h3>
             </a>
             <a href="#" id="setactivate">
-                <h3 id="SideBarItem">Material Wise Report</h3>
+                <h3 id="SideBarItem">Notes</h3>
             </a>
             <a>
-                <h3 id="SideBarItem">Overall Account Statement</h3>
+                <h3 id="SideBarItem">Material Inward</h3>
+            </a>
+            <a>
+                <h3 id="SideBarItem">Material Outward</h3>
+            </a>
+            <a>
+                <h3 id="SideBarItem">Work Done</h3>
+            </a>
+            <a>
+                <h3 id="SideBarItem">Total Expense</h3>
             </a>
 
         </div>
-        <div id="pybtns" class="customspaceing" style="width: 100%;margin-right: 80px">
-            <h4 id="Pagetitle">MATERIAL WISE REPORT</h4>
-            <div class="customspaceing" style="display: flex;justify-content: left;margin-top: 5%;margin-left: 80px;">
-                <div id="ReportContainer">
-                    <form action="" style="display: flex;flex-direction: column;width: 80%;">
-                        <label for="popinput">Select the type</label>
-                        <input id="popinput" list="browsers" class="custominput" placeholder="Enter the Material Type" type="text">
-                        <datalist id="browsers">
-                            <option value="Vendor">
-                            <option value="Labour">
-                            <option value="Client">
-                        </datalist>
-                        <label for="popinput">Start Date</label>
-                        <input id="popinput" class="custominput" placeholder="Enter the Start Date" type="date">
-                        <label for="popinput">End Date</label>
-                        <input id="popinput" class="custominput" placeholder="Enter the End Date" type="date">
-                        <div id="repbtns" style="display: flex;justify-content: center;gap: 20px;">
-                            <a id="popupbtn" class="custombtn">Download PDF</a>
-                            <a id="popupbtn" class="custombtn">Download Excel</a>
+        <div id="searchBox" style="width: 100%;margin-right: 80px">
+            <h4 id="Pagetitle" style="margin-bottom: 0px;">Notes</h4>
+            <div id="phonesearch" style="display: flex;justify-content: space-between;width: 105%;margin-left: 0px;">
+                <div id="tablesearch"><input type="text" placeholder="Search..">
+                    <h5>Search</h5>
+                </div>
+                <h5 onclick="tiggerpopup()" id="chvendorbtn">Add Note</h5>
+            </div>
+            <div id="ProjectCards" style="margin-bottom: 30px;margin: 0px 5%;height:60%;overflow-y: auto;">
+                <div id="ProjectCard" class="overwriteheight">
+                    <div id="innerprojectcard" class="overwriteinnerproject">
+                        <h3>Gopal School</h3>
+                        <div id="TableMenu">
+                            <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                            <img onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
                         </div>
-                    </form>
+                    </div>
+                </div>
+                <div id="ProjectCard" class="overwriteheight">
+                    <div id="innerprojectcard" class="overwriteinnerproject">
+                        <h3>Gopal School</h3>
+                        <div id="TableMenu">
+                            <img onclick="tiggerpopup()" src="./assets/Image/icons/edit.svg" alt="edit">
+                            <img onclick="Deleteconfirm()" src="./assets/Image/icons/delete.svg" alt="delete" srcset="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

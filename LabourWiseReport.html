@@ -42,10 +42,11 @@
                         <a href="#">Purchase Return</a>
                     </div>
                 </div>
-                <div class="dropdown">
+<div class="dropdown">
                     <h3 id="NavItem">SITE ACTIVITY</h3>
                     <div class="dropdown-content">
                         <a href="#">To Do</a>
+                        <a href="#">Notes</a>
                         <a href="#">Check List</a>
                         <a href="#">Material Inward</a>
                         <a href="#">Material Outward</a>
@@ -116,13 +117,24 @@
 
         </div>
         <div id="pybtns" class="customspaceing" style="width: 100%;margin-right: 80px">
-            <h4 id="Pagetitle">LABOUR WISE REPORT</h4>
-            <div class="customspaceing" style="display: flex;justify-content: left;margin-top: 5%;margin-left: 80px;">
+            <h4 id="Pagetitle" style="margin-bottom: 10px;">LABOUR WISE REPORT</h4>
+            <div class="customspaceing" style="display: flex;justify-content: left;margin-top: 0%;margin-left: 80px;">
                 <div id="ReportContainer">
                     <form action="" style="display: flex;flex-direction: column;width: 80%;">
+                        <label for="popinput">Labour Type</label>
+                        <input id="popinput" list="browsers" class="custominput" placeholder="Enter the Labour Type">
+                        <datalist id="browsers">
+                            <option value="Tonnes">
+                            <option value="Kg">
+                            <option value="Cubic Meters">
+                            <option value="Square Meters">
+                            <option value="Meter">
+                            <option value="Liters">
+                            <option value="Gallons">
+                        </datalist>
                         <label for="popinput">Start Date</label>
                         <input id="popinput" class="custominput" placeholder="Enter the Start Date" type="date">
-                        <label for="popinput" style="margin-top: 50px;">End Date</label>
+                        <label for="popinput" style="margin-top: 5px;">End Date</label>
                         <input id="popinput" class="custominput" placeholder="Enter the End Date" type="date">
                         <div id="repbtns" style="display: flex;justify-content: center;gap: 20px;">
                             <a id="popupbtn" class="custombtn">Download PDF</a>
