@@ -263,6 +263,12 @@ body::-webkit-scrollbar-thumb {
     background-color: #3b30a4;
 }
 
+#downloadbtn{
+    width: 20px !important;
+    height: 20px;
+    margin-top: 5px;
+}
+
 #ProjectCards {
     margin-top: 50px;
     display: flex;
