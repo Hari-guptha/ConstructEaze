@@ -269,6 +269,11 @@ body::-webkit-scrollbar-thumb {
     margin-top: 5px;
 }
 
+.SelectBar{
+    width: 500px !important;
+    margin-left: 0px !important;
+}
+
 #ProjectCards {
     margin-top: 50px;
     display: flex;
@@ -549,7 +554,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #ffc048;
     padding: 10px 40px;
     font-weight: 500;
-    width: fit-content;
+    width: fit-content !important;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -841,7 +846,7 @@ a {
 }
 
 .custominput {
-    width: 100% !important;
+    width: 450px !important;
     margin-left: 0px !important;
 }
 
@@ -870,6 +875,9 @@ a {
     #LoginContainer {
         flex-wrap: wrap;
         width: 100%;
+    }
+    .custominput {
+        width: 100% !important;
     }
 
     #popinput {
@@ -994,6 +1002,10 @@ a {
 
     #Projectmain {
         flex-wrap: wrap;
+    }
+    .SelectBar{
+        width:125%!important;
+        /* margin-left: 0px !important; */
     }
 
     #exppop {

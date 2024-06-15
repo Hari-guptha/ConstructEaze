@@ -18,7 +18,7 @@
                 <img onclick="Closemenu()" id="closebtn" src="./assets/Image/icons/remove.svg" alt="">
             </div>
             <div id="sideNavItems">
-              <div class="dropdown">
+                <div class="dropdown">
                     <h3 id="NavItem">MASTER</h3>
                     <div class="dropdown-content">
                         <a href="./clientform.html">client form</a>
@@ -42,7 +42,7 @@
                         <a href="#">Purchase Return</a>
                     </div>
                 </div>
-<div class="dropdown">
+                <div class="dropdown">
                     <h3 id="NavItem">SITE ACTIVITY</h3>
                     <div class="dropdown-content">
                         <a href="#">To Do</a>
@@ -51,7 +51,7 @@
                         <a href="#">Material Inward</a>
                         <a href="#">Material Outward</a>
                         <a href="#">Work Done</a>
-                        <a href="#">Total Expense</a>
+                        <a href="#">Fund Management</a>
                         <a href="#">Drawings</a>
                     </div>
                 </div>
@@ -122,16 +122,15 @@
                 <div id="ReportContainer">
                     <form action="" style="display: flex;flex-direction: column;width: 80%;">
                         <label for="popinput">Labour Type</label>
-                        <input id="popinput" list="browsers" class="custominput" placeholder="Enter the Labour Type">
-                        <datalist id="browsers">
-                            <option value="Tonnes">
-                            <option value="Kg">
-                            <option value="Cubic Meters">
-                            <option value="Square Meters">
-                            <option value="Meter">
-                            <option value="Liters">
-                            <option value="Gallons">
-                        </datalist>
+                        <select id="popinput" class="SelectBar">
+                            <option value="Tonnes">Tonnes</option>
+                            <option value="Kg">Kg</option>
+                            <option value="Cubic Meters">Cubic Meters</option>
+                            <option value="Square Meters">Square Meters</option>
+                            <option value="Meter">Meter</option>
+                            <option value="Liters">Liters</option>
+                            <option value="Gallons">Gallons</option>
+                        </select>
                         <label for="popinput">Start Date</label>
                         <input id="popinput" class="custominput" placeholder="Enter the Start Date" type="date">
                         <label for="popinput" style="margin-top: 5px;">End Date</label>
