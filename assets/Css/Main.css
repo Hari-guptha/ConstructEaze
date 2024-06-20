@@ -1103,6 +1103,9 @@ a {
     #chvendorbtn {
         margin-left: 20px;
     }
+    #customers{
+        width: 170% !important;
+    }
 
     #phonesecction1 {
         flex-wrap: wrap;
