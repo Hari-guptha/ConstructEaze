@@ -103,6 +103,7 @@ body::-webkit-scrollbar-thumb {
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
+    text-transform: capitalize;
     text-decoration: none;
     display: block;
 }
@@ -814,8 +815,9 @@ a {
     background-color: #4a40a7;
     width: 100%;
     padding: 10px 3%;
+    /* gap: 30px; */
     justify-content: space-between;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 
@@ -879,7 +881,19 @@ a {
     .custominput {
         width: 100% !important;
     }
-
+    #supercounter{
+        width: 80%;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 30px;
+        margin:0;
+        padding: 20px;
+    }
+    #supercountertop{
+        width:100% !important;
+        margin: 30px 0px;
+    }
     #popinput {
         width: 50%;
     }
