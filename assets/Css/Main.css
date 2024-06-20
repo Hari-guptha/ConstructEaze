@@ -1103,6 +1103,9 @@ a {
     #chvendorbtn {
         margin-left: 20px;
     }
+    .DIControl input{
+        width: 30px;
+    }
     #customers{
         width: 170% !important;
     }
